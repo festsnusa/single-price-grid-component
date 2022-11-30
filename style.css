@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+html {
+  font-family: 'Karla', sans-serif;
+}
+
+.container {
+  container-type: inline-size;
+}
+
+.card {
+  max-width: 33%;
+  margin: 0 auto;
+  padding: 3rem 0 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 3px #98a6bd;
+          box-shadow: 1px 1px 3px #98a6bd;
+}
+
+.header {
+  padding: 0 3rem 2rem;
+}
+
+.header__header {
+  color: #2ab2af;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.header__title {
+  color: #c0df34;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.header__subtitle {
+  color: #98a6bd;
+  line-height: 1.5rem;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.subscription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #2ab2af;
+  border-radius: 0 0 0 10px;
+  padding: 2rem;
+}
+
+.subscription__header {
+  color: #fff;
+}
+
+.subscription__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscription__value {
+  color: #e5eff5;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.subscription__per-month {
+  color: #6CD9D7;
+  font-weight: 700;
+}
+
+.subscription__text {
+  color: #e5eff5;
+  font-size: 1.1rem;
+}
+
+.subscription__button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background-color: #c0df34;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 1px #e5eff5;
+          box-shadow: 0 0 1px #e5eff5;
+  color: #e5eff5;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #54BFBC;
+  padding: 2rem;
+  border-radius: 0 0 10px 0;
+}
+
+.about__header {
+  color: #e5eff5;
+  font-size: 1.5rem;
+}
+
+.about__list {
+  list-style: none;
+  padding: 0;
+}
+
+.about__item {
+  color: #CAFFFF;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 1050px) {
+  .footer {
+    display: block;
+  }
+  .subscription {
+    border-radius: 0;
+  }
+  .about {
+    border-radius: 0 0 10px 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

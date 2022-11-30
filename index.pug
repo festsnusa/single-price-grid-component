@@ -1,0 +1,39 @@
+mixin list(arr)
+  ul.about__list
+    each value in arr 
+      li.about__item= value
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Single Price
+    link(rel="stylesheet", href="./style.css")
+  body
+    .container
+      .card 
+        section.header 
+          .header__header Join our community
+          .header__title 30-day, hassle-free money back guarantee
+          .header__subtitle Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.
+        section.footer
+          section.subscription 
+            h1.subscription__header Monthly Subscription 
+            .subscription__price 
+              p.subscription__value $29
+              p.subscription__per-month per month
+            p.subscription__text Full access for less than $1 a day
+            a.subscription__link(href="#") 
+              button.subscription__button Sign Up
+          section.about
+            h1.about__header Why us
+            +list(['Tutorials by industry experts',
+              'Peer & expert code review',
+              'Coding exercises',
+              'Access to our Github repos',
+              'Community forum',
+              'Flashcard decks',
+              'New videos every week'
+            ])
